@@ -12,7 +12,8 @@ const settings= StyleSheet.create({
     
     },
     text:{
-       
+       fontSize:16,
+       color:'black',
     },
     icon:{
         width:35,
@@ -35,7 +36,7 @@ const settings= StyleSheet.create({
     // paddingLeft:15 //change this later t
     },
     btn:{
-        
+        marginTop:20,
         borderWidth:1,
         borderColor: '#ED0F35',
         padding:15,
@@ -52,9 +53,27 @@ const settings= StyleSheet.create({
     },
 
     btnCover:{
-     
-  
         alignItems: 'center',
+    },
+    personalMain:{
+        padding:10,
+        margin:10,
+        borderWidth:0.5,
+        borderColor:'#ebe8e8',
+        backgroundColor:'#fafafa',
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'space-between'
+    },
+    user:{
+        width:'80%',
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+    },
+    accountName:{
+        fontSize:20,
+        fontWeight:'bold',
 
     }
 })
