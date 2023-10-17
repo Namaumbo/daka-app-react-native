@@ -1,39 +1,40 @@
 import React from "react";
 import { View, SafeAreaView, Text, TouchableOpacity } from "react-native";
-import Icon from "react-native-vector-icons/FontAwesome";
+import Icon from "react-native-vector-icons/AntDesign";
+import FontIcon from "react-native-vector-icons/FontAwesome"
 import settings from "./settingsStyles";
 
 export default function Settings({ navigation }) {
   const settingContent = [
     {
       id: "fdwr-dfdsg-sgs",
-      icon: "check-circle",
+      icon: "checkcircle",
       text: "Terms and Conditions",
-      color: "tomato",
+      color: "skyblue",
     },
     {
       id: "dgss-dfdfsdga-xxsd",
-      icon: "question-circle",
+      icon: "questioncircle",
       text: "Help",
-      color: "tomato",
+      color: "skyblue",
     },
     {
       id: "dgs-ftew-zzz",
-      icon: "minus-circle",
+      icon: "minuscircle",
       text: "Delete Account",
       color: "tomato",
     },
     {
       id: "fwwer-dfdsg-dsfsdb",
-      icon: "info-circle",
+      icon: "infocirlce",
       text: "About App",
-      color: "tomato",
+      color: "skyblue",
     },
     {
       id: "tfhbc-dfdsg-ddre6",
       icon: "book",
       text: "FAQ",
-      color: "tomato",
+      color: "skyblue",
     },
   ];
 
@@ -44,14 +45,14 @@ export default function Settings({ navigation }) {
     <SafeAreaView>
       <View style={settings.personalMain}>
         <View style={settings.user}>
-          <Icon name="user-circle" size={80}></Icon>
+          <FontIcon name="user-circle" size={80}/>
           <View>
             <Text style={settings.accountName}>John Doe</Text>
             <Text>emailexample@gmail.com</Text>
           </View>
         </View>
         <View>
-          <Icon name="angle-right" size={20} color="grey" />
+          <Icon name="right" size={20} color="grey" />
         </View>
       </View>
 
@@ -71,7 +72,7 @@ export default function Settings({ navigation }) {
                 </View>
               </View>
               <View>
-                <Icon name="angle-right" size={20} color="grey" />
+                <Icon name="right" size={20} color="grey" />
               </View>
             </View>
           );

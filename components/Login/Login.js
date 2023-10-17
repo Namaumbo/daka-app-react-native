@@ -13,6 +13,9 @@ export default function Login({navigation}) {
     navigation.navigate('Home')
 
   }
+  const gotoSignUp = () => {
+    navigation.navigate('SignUp')
+  }
   return (
     <View View style={styles.container}>
     <StatusBar style="auto" />
@@ -37,8 +40,8 @@ export default function Login({navigation}) {
       </View>
       <View style={styles.sinUpText}>
         <Text>
-          Don't have an account yet?{" "}
-            <Text style={styles.signUp}>SIGN UP</Text>
+          Don't have an account yet?
+            <Text style={styles.signUp} onPress={gotoSignUp}>SIGN UP</Text>
         </Text>
       </View>
     </View>

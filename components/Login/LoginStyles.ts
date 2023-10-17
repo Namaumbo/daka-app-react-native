@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         marginBottom: 50
     },
     emailInput: {
-        borderWidth: 1,
+        borderWidth: .5,
         padding: 10,
         width: 270,
         marginBottom: 20,

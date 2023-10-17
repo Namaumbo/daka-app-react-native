@@ -11,7 +11,6 @@ export default function Home() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
     <TabNavigator/>
-
     </SafeAreaView>
   );
 }
