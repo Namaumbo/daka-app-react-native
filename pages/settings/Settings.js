@@ -20,7 +20,7 @@ export default function Settings({ navigation }) {
     },
     {
       id: "dgs-ftew-zzz",
-      icon: "minuscircle",
+      icon: "delete",
       text: "Delete Account",
       color: "tomato",
     },
