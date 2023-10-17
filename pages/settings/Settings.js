@@ -6,33 +6,37 @@ import settings from "./settingsStyles";
 export default function Settings({ navigation }) {
   const settingContent = [
     {
+      id: "fdwr-dfdsg-sgs",
       icon: "check-circle",
       text: "Terms and Conditions",
       color: "tomato",
     },
     {
+      id: "dgss-dfdfsdga-xxsd",
       icon: "question-circle",
       text: "Help",
       color: "tomato",
     },
     {
+      id: "dgs-ftew-zzz",
       icon: "minus-circle",
       text: "Delete Account",
       color: "tomato",
     },
     {
+      id: "fwwer-dfdsg-dsfsdb",
       icon: "info-circle",
       text: "About App",
       color: "tomato",
     },
     {
+      id: "tfhbc-dfdsg-ddre6",
       icon: "book",
       text: "FAQ",
       color: "tomato",
     },
   ];
 
-  
   const handleSignOut = () => {
     navigation.navigate("Login");
   };
@@ -54,24 +58,22 @@ export default function Settings({ navigation }) {
       <View style={settings.main}>
         {settingContent.map((setting) => {
           return (
-            <>
-              <View key={setting.icon} style={settings.cover}>
-                <View style={settings.settingIconText}>
-                  <Icon
-                    name={setting.icon}
-                    size={30}
-                    color={setting.color}
-                    style={settings.icon}
-                  />
-                  <View>
-                    <Text style={settings.text}>{setting.text}</Text>
-                  </View>
-                </View>
+            <View style={settings.cover} key={setting.id}>
+              <View style={settings.settingIconText}>
+                <Icon
+                  name={setting.icon}
+                  size={30}
+                  color={setting.color}
+                  style={settings.icon}
+                />
                 <View>
-                  <Icon name="angle-right" size={20} color="grey" />
+                  <Text style={settings.text}>{setting.text}</Text>
                 </View>
               </View>
-            </>
+              <View>
+                <Icon name="angle-right" size={20} color="grey" />
+              </View>
+            </View>
           );
         })}
         <View style={settings.btnCover}>
