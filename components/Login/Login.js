@@ -10,7 +10,7 @@ export default function Login({navigation}) {
 
 
   const handleLogin = () => {
-    navigation.navigate('Settings')
+    navigation.navigate('Home')
 
   }
   return (

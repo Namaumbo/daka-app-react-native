@@ -16,6 +16,7 @@ const settings= StyleSheet.create({
        color:'black',
     },
     icon:{
+        marginRight:10,
         width:35,
         height:35,
         justifyContent: 'center',
@@ -58,12 +59,14 @@ const settings= StyleSheet.create({
     personalMain:{
         padding:10,
         margin:10,
-        borderWidth:0.5,
+        borderWidth:1,
         borderColor:'#ebe8e8',
         backgroundColor:'#fafafa',
         flexDirection:'row',
         alignItems:'center',
-        justifyContent:'space-between'
+        justifyContent:'space-between',
+        borderRadius:5
+    
     },
     user:{
         width:'80%',

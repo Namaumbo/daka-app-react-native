@@ -6,29 +6,29 @@ import settings from "./settingsStyles";
 export default function Settings({ navigation }) {
   const settingContent = [
     {
-      icon: "check",
+      icon: "check-circle",
       text: "Terms and Conditions",
-      color: "yellow",
+      color: "tomato",
     },
     {
-      icon: "question",
+      icon: "question-circle",
       text: "Help",
-      color: "green",
+      color: "tomato",
     },
     {
-      icon: "minus-square",
+      icon: "minus-circle",
       text: "Delete Account",
       color: "tomato",
     },
     {
-      icon: "info",
+      icon: "info-circle",
       text: "About App",
-      color: "skyblue",
+      color: "tomato",
     },
     {
       icon: "book",
       text: "FAQ",
-      color: "green",
+      color: "tomato",
     },
   ];
 
@@ -40,7 +40,7 @@ export default function Settings({ navigation }) {
     <SafeAreaView>
       <View style={settings.personalMain}>
         <View style={settings.user}>
-          <Icon name="user-circle" size={70}></Icon>
+          <Icon name="user-circle" size={80}></Icon>
           <View>
             <Text style={settings.accountName}>John Doe</Text>
             <Text>emailexample@gmail.com</Text>
@@ -59,7 +59,7 @@ export default function Settings({ navigation }) {
                 <View style={settings.settingIconText}>
                   <Icon
                     name={setting.icon}
-                    size={25}
+                    size={30}
                     color={setting.color}
                     style={settings.icon}
                   />
