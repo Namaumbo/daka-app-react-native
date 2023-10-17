@@ -3,7 +3,7 @@ import { View, Text, Image ,TouchableOpacity } from "react-native";
 import newsStyle from "./newsStyle";
 import Icon from "react-native-vector-icons/FontAwesome";
 
-export default function News({ news }) {
+export default function NewsComponent({ news }) {
   return (
     <View>
       <TouchableOpacity style={newsStyle.cover}>
